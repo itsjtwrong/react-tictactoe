@@ -136,11 +136,10 @@ function Square(props) {
   }
   
   // ========================================
-  
-  ReactDOM.render(
-    <Game />,
-    document.getElementById('root')
-  );
+  // ReactDOM.render(
+  //   <Game />,
+  //   document.getElementById('root')
+  // );
   
   // [Array-of Squares] -> [string, [Array-of Ints]] OR NULL
   // used to check win/draw state, and if either state has been hit,
@@ -173,3 +172,5 @@ function Square(props) {
     }
     return null;
   }
+
+  export { calculateWinner };
